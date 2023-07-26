@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Profile card component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            html {
+                box-sizing: border-box;
+            }
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+            body {
+                background-color: #19a1ad;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-family: "Montserrat", sans-serif;
+                font-family: "Mukta", sans-serif;
+                color: #333645;
+            }
+            main {
+                width: 85vw;
+                max-width: 400px;
+                background-color: white;
+                margin: auto;
+                border-radius: 15px;
+                overflow: hidden;
+                position: relative;
+                background: url("images/bg-pattern-card.svg");
+                background-size: auto 40%;
+                background-repeat: repeat-x;
+                background-color: white;
+            }
+
+            #bottom {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                padding-bottom: 20px;
+            }
+            #bottom img {
+                width: 22%;
+                min-width: 50px;
+                border-radius: 50%;
+                margin-top: 30%;
+                border: 4px solid white;
+            }
+            #info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                font-weight: 600;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 15px;
+            }
+            #info span {
+                font-weight: 400;
+                color: #85868c;
+                font-size: 25px;
+            }
+            address {
+                font-weight: 400;
+                color: #85868c;
+                font-style: normal;
+            }
+            hr {
+                color: #eaeaea;
+                width: 100%;
+                border: 1px solid #eaeaea;
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+            ul {
+                list-style: none;
+                display: flex;
+                text-align: center;
+                width: 100%;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            li {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+            }
+            li span {
+                color: #85868c;
+            }
+            li span:first-child {
+                font-weight: 800;
+                color: #333645;
+                font-size: 22px;
+            }
+            #bck1 {
+                position: absolute;
+                width: 48%;
+                top: -50%;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="bck1" src="images/bg-pattern-top.svg" />
+        <main>
+            <div id="bottom">
+                <img src="images/image-victor.jpg" />
+                <div id="info">
+                    <h1>Victor Crest</h1>
+                    <span>26</span>
+                </div>
+
+                <address>London</address>
+                <hr />
+                <ul>
+                    <li>
+                        <span>80K</span>
+                        <span>Followers</span>
+                    </li>
+                    <li>
+                        <span>803K</span>
+                        <span>Likes</span>
+                    </li>
+                    <li>
+                        <span>1.4K</span>
+                        <span>Photos</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>
